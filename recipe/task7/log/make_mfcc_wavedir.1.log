@@ -1,0 +1,15 @@
+# compute-mfcc-feats --verbose=2 --config=conf/mfcc.conf scp,p:log/wav_wavedir.1.scp ark:- | copy-feats --compress=true ark:- ark,scp:/mnt/c/Users/Dell/Dropbox/ASR_project/submission/task7/mfcc/raw_mfcc_wavedir.1.ark,/mnt/c/Users/Dell/Dropbox/ASR_project/submission/task7/mfcc/raw_mfcc_wavedir.1.scp 
+# Started at Sat Apr  8 08:14:31 DST 2017
+#
+copy-feats --compress=true ark:- ark,scp:/mnt/c/Users/Dell/Dropbox/ASR_project/submission/task7/mfcc/raw_mfcc_wavedir.1.ark,/mnt/c/Users/Dell/Dropbox/ASR_project/submission/task7/mfcc/raw_mfcc_wavedir.1.scp 
+compute-mfcc-feats --verbose=2 --config=conf/mfcc.conf scp,p:log/wav_wavedir.1.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.1.38~1391-3fec9]:main():compute-mfcc-feats.cc:178) Processed features for key ibf_001_001
+VLOG[2] (compute-mfcc-feats[5.1.38~1391-3fec9]:main():compute-mfcc-feats.cc:178) Processed features for key ibf_001_028
+VLOG[2] (compute-mfcc-feats[5.1.38~1391-3fec9]:main():compute-mfcc-feats.cc:178) Processed features for key ibf_012_012
+VLOG[2] (compute-mfcc-feats[5.1.38~1391-3fec9]:main():compute-mfcc-feats.cc:178) Processed features for key ibf_012_016
+VLOG[2] (compute-mfcc-feats[5.1.38~1391-3fec9]:main():compute-mfcc-feats.cc:178) Processed features for key ibm_008_003
+VLOG[2] (compute-mfcc-feats[5.1.38~1391-3fec9]:main():compute-mfcc-feats.cc:178) Processed features for key ibm_008_057
+LOG (compute-mfcc-feats[5.1.38~1391-3fec9]:main():compute-mfcc-feats.cc:181)  Done 6 out of 6 utterances.
+LOG (copy-feats[5.1.38~1391-3fec9]:main():copy-feats.cc:120) Copied 6 feature matrices.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat Apr  8 08:14:31 DST 2017, elapsed time 0 seconds

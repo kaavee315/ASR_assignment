@@ -1,0 +1,1 @@
+srilm.test//2gram.kn03.gz  file  srilm.test//dev.txt:  25  sentences,  525  words,  0  OOVs  0  zeroprobs,  logprob=  -1456.372  ppl=  444.5794  ppl1=  594.3499

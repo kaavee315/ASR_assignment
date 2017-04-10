@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono/tree exp/mono/0.mdl data/lang/L.fst "ark:sym2int.pl --map-oov 1 -f 2- data/lang/words.txt < data/train/split4/2/text|" "ark:|gzip -c >exp/mono/fsts.2.gz" 
+# Started at Fri Apr  7 19:34:51 IST 2017
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono/tree exp/mono/0.mdl data/lang/L.fst 'ark:sym2int.pl --map-oov 1 -f 2- data/lang/words.txt < data/train/split4/2/text|' 'ark:|gzip -c >exp/mono/fsts.2.gz' 
+sym2int.pl: replacing perengkaka with 1
+sym2int.pl: replacing jalainya with 1
+sym2int.pl: replacing aziman with 1
+sym2int.pl: replacing beritanya with 1
+sym2int.pl: replacing epat with 1
+sym2int.pl: replacing upis with 1
+sym2int.pl: replacing mont with 1
+sym2int.pl: replacing slash with 1
+sym2int.pl: replacing spdc with 1
+sym2int.pl: replacing php with 1
+sym2int.pl: replacing davidson with 1
+sym2int.pl: replacing belalbuh with 1
+sym2int.pl: replacing goodwill with 1
+sym2int.pl: replacing merti with 1
+sym2int.pl: replacing lantik with 1
+sym2int.pl: replacing frocis with 1
+sym2int.pl: replacing ikthiar with 1
+sym2int.pl: replacing didunya with 1
+sym2int.pl: replacing ketegalnya with 1
+sym2int.pl: replacing orangka with 1
+sym2int.pl: not warning for OOVs any more times
+** Replaced 25 instances of OOVs with 1
+LOG (compile-train-graphs[5.1.38~1-3fec9]:main():compile-train-graphs.cc:145) compile-train-graphs: succeeded for 63 graphs, failed for 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Fri Apr  7 19:34:54 IST 2017, elapsed time 3 seconds

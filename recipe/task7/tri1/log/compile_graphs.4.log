@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 1 -f 2- data/lang/words.txt < data/train/split4/4/text |" "ark:|gzip -c >exp/tri1/fsts.4.gz" 
+# Started at Fri Apr  7 20:15:20 DST 2017
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 1 -f 2- data/lang/words.txt < data/train/split4/4/text |' 'ark:|gzip -c >exp/tri1/fsts.4.gz' 
+sym2int.pl: replacing kasti with 1
+sym2int.pl: replacing quran with 1
+sym2int.pl: replacing rana with 1
+sym2int.pl: replacing ngirik with 1
+sym2int.pl: replacing penyungkai with 1
+sym2int.pl: replacing sempekatnya with 1
+sym2int.pl: replacing nutp with 1
+sym2int.pl: replacing nguluk with 1
+sym2int.pl: replacing kampucher with 1
+sym2int.pl: replacing fgvh with 1
+sym2int.pl: replacing kamarulzaman with 1
+sym2int.pl: replacing kabir with 1
+sym2int.pl: replacing gelana with 1
+sym2int.pl: replacing semiang with 1
+sym2int.pl: replacing mahgrib with 1
+sym2int.pl: replacing dipansang with 1
+sym2int.pl: replacing semiang with 1
+sym2int.pl: replacing gelana with 1
+sym2int.pl: replacing perengkanya with 1
+sym2int.pl: replacing sahani with 1
+sym2int.pl: not warning for OOVs any more times
+** Replaced 69 instances of OOVs with 1
+LOG (compile-train-graphs[5.1.38~1391-3fec9]:main():compile-train-graphs.cc:145) compile-train-graphs: succeeded for 136 graphs, failed for 0
+# Accounting: time=5 threads=1
+# Ended (code 0) at Fri Apr  7 20:15:25 DST 2017, elapsed time 5 seconds

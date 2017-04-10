@@ -1,0 +1,2 @@
+compute-cmvn-stats --spk2utt=ark:wavedir/spk2utt scp:wavedir/feats.scp ark,scp:/mnt/c/Users/Dell/Dropbox/ASR_project/submission/task7/mfcc/cmvn_wavedir.ark,/mnt/c/Users/Dell/Dropbox/ASR_project/submission/task7/mfcc/cmvn_wavedir.scp 
+LOG (compute-cmvn-stats[5.1.38~1391-3fec9]:main():compute-cmvn-stats.cc:171) Done accumulating CMVN stats for 6 utterances; 0 had errors.

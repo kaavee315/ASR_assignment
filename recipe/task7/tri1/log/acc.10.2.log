@@ -1,0 +1,14 @@
+# gmm-acc-stats-ali exp/tri1/10.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/2/utt2spk scp:data/train/split4/2/cmvn.scp scp:data/train/split4/2/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark,s,cs:gunzip -c exp/tri1/ali.2.gz|" exp/tri1/10.2.acc 
+# Started at Fri Apr  7 20:15:52 DST 2017
+#
+gmm-acc-stats-ali exp/tri1/10.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/2/utt2spk scp:data/train/split4/2/cmvn.scp scp:data/train/split4/2/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark,s,cs:gunzip -c exp/tri1/ali.2.gz|' exp/tri1/10.2.acc 
+apply-cmvn --utt2spk=ark:data/train/split4/2/utt2spk scp:data/train/split4/2/cmvn.scp scp:data/train/split4/2/feats.scp ark:- 
+add-deltas ark:- ark:- 
+LOG (gmm-acc-stats-ali[5.1.38~1391-3fec9]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance ibf_005_292 avg. like is -103.44 over 556 frames.
+LOG (gmm-acc-stats-ali[5.1.38~1391-3fec9]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance ibf_014_003 avg. like is -99.3674 over 1099 frames.
+LOG (apply-cmvn[5.1.38~1391-3fec9]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 117 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.1.38~1391-3fec9]:main():gmm-acc-stats-ali.cc:112) Done 117 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.1.38~1391-3fec9]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -100.047 over 126436 frames.
+LOG (gmm-acc-stats-ali[5.1.38~1391-3fec9]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Apr  7 20:15:53 DST 2017, elapsed time 1 seconds

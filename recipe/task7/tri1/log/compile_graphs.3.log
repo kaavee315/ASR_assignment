@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 1 -f 2- data/lang/words.txt < data/train/split4/3/text |" "ark:|gzip -c >exp/tri1/fsts.3.gz" 
+# Started at Fri Apr  7 20:15:20 DST 2017
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 1 -f 2- data/lang/words.txt < data/train/split4/3/text |' 'ark:|gzip -c >exp/tri1/fsts.3.gz' 
+sym2int.pl: replacing muhidin with 1
+sym2int.pl: replacing gombak with 1
+sym2int.pl: replacing nejukka with 1
+sym2int.pl: replacing tahan with 1
+sym2int.pl: replacing hi with 1
+sym2int.pl: replacing thanasegar with 1
+sym2int.pl: replacing sinaiah with 1
+sym2int.pl: replacing benong with 1
+sym2int.pl: replacing influence with 1
+sym2int.pl: replacing mccain with 1
+sym2int.pl: replacing liberman with 1
+sym2int.pl: replacing package with 1
+sym2int.pl: replacing incentive with 1
+sym2int.pl: replacing anakmit with 1
+sym2int.pl: replacing mengilas with 1
+sym2int.pl: replacing driving with 1
+sym2int.pl: replacing infrustraktur with 1
+sym2int.pl: replacing tanggung-pengawa with 1
+sym2int.pl: replacing pemakainya with 1
+sym2int.pl: replacing pengge with 1
+sym2int.pl: not warning for OOVs any more times
+** Replaced 38 instances of OOVs with 1
+LOG (compile-train-graphs[5.1.38~1391-3fec9]:main():compile-train-graphs.cc:145) compile-train-graphs: succeeded for 143 graphs, failed for 0
+# Accounting: time=6 threads=1
+# Ended (code 0) at Fri Apr  7 20:15:26 DST 2017, elapsed time 6 seconds

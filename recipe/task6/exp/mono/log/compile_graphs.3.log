@@ -1,0 +1,26 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono/tree exp/mono/0.mdl data/lang/L.fst "ark:sym2int.pl --map-oov 1 -f 2- data/lang/words.txt < data/train/split4/3/text|" "ark:|gzip -c >exp/mono/fsts.3.gz" 
+# Started at Fri Apr  7 19:34:51 IST 2017
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono/tree exp/mono/0.mdl data/lang/L.fst 'ark:sym2int.pl --map-oov 1 -f 2- data/lang/words.txt < data/train/split4/3/text|' 'ark:|gzip -c >exp/mono/fsts.3.gz' 
+sym2int.pl: replacing muhidin with 1
+sym2int.pl: replacing tahan with 1
+sym2int.pl: replacing hi with 1
+sym2int.pl: replacing mccain with 1
+sym2int.pl: replacing liberman with 1
+sym2int.pl: replacing driving with 1
+sym2int.pl: replacing infrustraktur with 1
+sym2int.pl: replacing pemakainya with 1
+sym2int.pl: replacing counselor with 1
+sym2int.pl: replacing kiet with 1
+sym2int.pl: replacing rampak with 1
+sym2int.pl: replacing rampak with 1
+sym2int.pl: replacing rampak with 1
+sym2int.pl: replacing ngelancar with 1
+sym2int.pl: replacing sarike with 1
+sym2int.pl: replacing ambik with 1
+sym2int.pl: replacing dongzhong with 1
+sym2int.pl: replacing intenet with 1
+** Replaced 18 instances of OOVs with 1
+LOG (compile-train-graphs[5.1.38~1-3fec9]:main():compile-train-graphs.cc:145) compile-train-graphs: succeeded for 70 graphs, failed for 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Fri Apr  7 19:34:54 IST 2017, elapsed time 3 seconds

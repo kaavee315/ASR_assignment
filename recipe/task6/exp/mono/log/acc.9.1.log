@@ -1,0 +1,24 @@
+# gmm-acc-stats-ali exp/mono/9.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/1/utt2spk scp:data/train/split4/1/cmvn.scp scp:data/train/split4/1/feats.scp ark:- | add-deltas ark:- ark:- |" "ark:gunzip -c exp/mono/ali.1.gz|" exp/mono/9.1.acc 
+# Started at Fri Apr  7 19:42:13 IST 2017
+#
+gmm-acc-stats-ali exp/mono/9.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/1/utt2spk scp:data/train/split4/1/cmvn.scp scp:data/train/split4/1/feats.scp ark:- | add-deltas ark:- ark:- |' 'ark:gunzip -c exp/mono/ali.1.gz|' exp/mono/9.1.acc 
+apply-cmvn --utt2spk=ark:data/train/split4/1/utt2spk scp:data/train/split4/1/cmvn.scp scp:data/train/split4/1/feats.scp ark:- 
+add-deltas ark:- ark:- 
+WARNING (gmm-acc-stats-ali[5.1.38~1-3fec9]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance ibf_002_011
+WARNING (gmm-acc-stats-ali[5.1.38~1-3fec9]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance ibf_002_274
+WARNING (gmm-acc-stats-ali[5.1.38~1-3fec9]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance ibf_002_323
+WARNING (gmm-acc-stats-ali[5.1.38~1-3fec9]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance ibf_002_372
+WARNING (gmm-acc-stats-ali[5.1.38~1-3fec9]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance ibf_003_022
+WARNING (gmm-acc-stats-ali[5.1.38~1-3fec9]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance ibf_003_294
+WARNING (gmm-acc-stats-ali[5.1.38~1-3fec9]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance ibf_003_311
+WARNING (gmm-acc-stats-ali[5.1.38~1-3fec9]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance ibf_003_334
+WARNING (gmm-acc-stats-ali[5.1.38~1-3fec9]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance ibf_003_343
+WARNING (gmm-acc-stats-ali[5.1.38~1-3fec9]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance ibf_003_352
+WARNING (gmm-acc-stats-ali[5.1.38~1-3fec9]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance ibf_004_004
+LOG (apply-cmvn[5.1.38~1-3fec9]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 50 utterances, errors on 0
+WARNING (gmm-acc-stats-ali[5.1.38~1-3fec9]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance ibf_004_045
+LOG (gmm-acc-stats-ali[5.1.38~1-3fec9]:main():gmm-acc-stats-ali.cc:112) Done 38 files, 12 with errors.
+LOG (gmm-acc-stats-ali[5.1.38~1-3fec9]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -106.129 over 36618 frames.
+LOG (gmm-acc-stats-ali[5.1.38~1-3fec9]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Apr  7 19:42:13 IST 2017, elapsed time 0 seconds

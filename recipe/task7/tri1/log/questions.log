@@ -1,0 +1,3 @@
+cluster-phones exp/tri1/treeacc data/lang/phones/sets.int exp/tri1/questions.int 
+WARNING (cluster-phones[5.1.38~1391-3fec9]:AutomaticallyObtainQuestions():build-tree.cc:628) AutomaticallyObtainQuestions: no stats available for phone set: 10 11 12 13 
+LOG (cluster-phones[5.1.38~1391-3fec9]:main():cluster-phones.cc:129) Wrote questions to exp/tri1/questions.int

@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono/tree exp/mono/0.mdl data/lang/L.fst "ark:sym2int.pl --map-oov 1 -f 2- data/lang/words.txt < data/train/split4/1/text|" "ark:|gzip -c >exp/mono/fsts.1.gz" 
+# Started at Fri Apr  7 19:34:51 IST 2017
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono/tree exp/mono/0.mdl data/lang/L.fst 'ark:sym2int.pl --map-oov 1 -f 2- data/lang/words.txt < data/train/split4/1/text|' 'ark:|gzip -c >exp/mono/fsts.1.gz' 
+sym2int.pl: replacing serakupnya with 1
+sym2int.pl: replacing hashmin with 1
+sym2int.pl: replacing lepasnya with 1
+sym2int.pl: replacing dinyanyi with 1
+sym2int.pl: replacing pegering with 1
+sym2int.pl: replacing suratkhabar with 1
+sym2int.pl: replacing semenjung with 1
+sym2int.pl: replacing indaiku with 1
+sym2int.pl: replacing biniku with 1
+sym2int.pl: replacing apaiku with 1
+sym2int.pl: replacing lakiku with 1
+sym2int.pl: replacing penyalin with 1
+sym2int.pl: replacing nwcc with 1
+sym2int.pl: replacing ngalihari with 1
+sym2int.pl: replacing pempang with 1
+sym2int.pl: replacing acci with 1
+sym2int.pl: replacing acci with 1
+sym2int.pl: replacing jss with 1
+sym2int.pl: replacing rayak with 1
+sym2int.pl: replacing bansaiban with 1
+sym2int.pl: not warning for OOVs any more times
+** Replaced 25 instances of OOVs with 1
+LOG (compile-train-graphs[5.1.38~1-3fec9]:main():compile-train-graphs.cc:145) compile-train-graphs: succeeded for 50 graphs, failed for 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Fri Apr  7 19:34:54 IST 2017, elapsed time 3 seconds

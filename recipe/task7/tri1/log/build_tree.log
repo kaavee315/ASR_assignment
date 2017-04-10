@@ -1,0 +1,64 @@
+# build-tree --verbose=1 --max-leaves=3000 --cluster-thresh=-1 exp/tri1/treeacc data/lang/phones/roots.int exp/tri1/questions.qst data/lang/topo exp/tri1/tree 
+# Started at Fri Apr  7 20:15:14 DST 2017
+#
+build-tree --verbose=1 --max-leaves=3000 --cluster-thresh=-1 exp/tri1/treeacc data/lang/phones/roots.int exp/tri1/questions.qst data/lang/topo exp/tri1/tree 
+LOG (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:100) Number of separate statistics is 18652
+LOG (build-tree[5.1.38~1391-3fec9]:BuildTree():build-tree.cc:159) BuildTree: before building trees, map has 35 leaves.
+LOG (build-tree[5.1.38~1391-3fec9]:SplitDecisionTree():build-tree-utils.cc:577) DoDecisionTreeSplit: split 1036 times, #leaves now 1071
+LOG (build-tree[5.1.38~1391-3fec9]:BuildTree():build-tree.cc:185) Setting clustering threshold to smallest split 300.32
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:BuildTree():build-tree.cc:194) After decision tree split, num-leaves = 1071, like-impr = 4.16762 per frame over 490425 frames.
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:BuildTree():build-tree.cc:198) Including just phones that were split, improvement is 4.16762 per frame over 490425 frames.
+LOG (build-tree[5.1.38~1391-3fec9]:BuildTree():build-tree.cc:213) BuildTree: removed 271 leaves.
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:BuildTree():build-tree.cc:220) Objf change due to clustering -0.115777 per frame.
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:BuildTree():build-tree.cc:223) Normalizing over only split phones, this is: -0.115777 per frame.
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:BuildTree():build-tree.cc:226) Num-leaves is now 800
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 2, low count 0
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 10, low count 79
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 15, low count 73
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 24, low count 72
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 33, low count 12
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 34, low count 77
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 43, low count 42
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 62, low count 21
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 83, low count 76
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 98, low count 75
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 104, low count 66
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 126, low count 12
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 130, low count 78
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 169, low count 41
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 179, low count 70
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 195, low count 21
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 201, low count 65
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 206, low count 87
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 225, low count 12
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 246, low count 77
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 298, low count 46
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 304, low count 15
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 339, low count 69
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 347, low count 65
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 367, low count 43
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 370, low count 86
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 378, low count 78
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 422, low count 92
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 441, low count 80
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 470, low count 35
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 474, low count 98
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 504, low count 91
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 510, low count 97
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 517, low count 60
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 528, low count 38
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 590, low count 34
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 600, low count 95
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 608, low count 49
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 643, low count 21
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 649, low count 98
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 661, low count 84
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 698, low count 95
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 719, low count 76
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 720, low count 84
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 722, low count 50
+VLOG[1] (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:138) For pdf-id 794, low count 58
+WARNING (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:180) Saw no stats for following phones: 2 3 4 9 10 11 12 13 14 17 21 23 25 29 33 38 41 45 49 53 57 61 65 69 75 77 81 85 89 93 97 98 99 101 105 109 113 117 119 121 125 127 129 131 133 135 137 141 
+LOG (build-tree[5.1.38~1391-3fec9]:main():build-tree.cc:184) Wrote tree
+# Accounting: time=4 threads=1
+# Ended (code 0) at Fri Apr  7 20:15:18 DST 2017, elapsed time 4 seconds

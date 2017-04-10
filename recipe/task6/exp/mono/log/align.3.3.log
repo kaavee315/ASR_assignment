@@ -1,0 +1,142 @@
+# gmm-align-compiled --transition-scale=1.8 --acoustic-scale=0.1 --self-loop-scale=1.18 --beam=10 --retry-beam=40 --careful=false "gmm-boost-silence --boost=1.0 1 exp/mono/3.mdl - |" "ark:gunzip -c exp/mono/fsts.3.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/3/utt2spk scp:data/train/split4/3/cmvn.scp scp:data/train/split4/3/feats.scp ark:- | add-deltas ark:- ark:- |" "ark,t:|gzip -c >exp/mono/ali.3.gz" 
+# Started at Fri Apr  7 19:36:26 IST 2017
+#
+gmm-align-compiled --transition-scale=1.8 --acoustic-scale=0.1 --self-loop-scale=1.18 --beam=10 --retry-beam=40 --careful=false 'gmm-boost-silence --boost=1.0 1 exp/mono/3.mdl - |' 'ark:gunzip -c exp/mono/fsts.3.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/3/utt2spk scp:data/train/split4/3/cmvn.scp scp:data/train/split4/3/feats.scp ark:- | add-deltas ark:- ark:- |' 'ark,t:|gzip -c >exp/mono/ali.3.gz' 
+gmm-boost-silence --boost=1.0 1 exp/mono/3.mdl - 
+WARNING (gmm-boost-silence[5.1.38~1-3fec9]:main():gmm-boost-silence.cc:82) The pdfs for the silence phones may be shared by other phones (note: this probably does not matter.)
+LOG (gmm-boost-silence[5.1.38~1-3fec9]:main():gmm-boost-silence.cc:93) Boosted weights for 5 pdfs, by factor of 1
+LOG (gmm-boost-silence[5.1.38~1-3fec9]:main():gmm-boost-silence.cc:103) Wrote model to -
+apply-cmvn --utt2spk=ark:data/train/split4/3/utt2spk scp:data/train/split4/3/cmvn.scp scp:data/train/split4/3/feats.scp ark:- 
+add-deltas ark:- ark:- 
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_003 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_003, len = 936
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_013 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_013, len = 740
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_018 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_026 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_026, len = 1229
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_041 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_041, len = 864
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_062 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_062, len = 1828
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_073 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_073, len = 1150
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_098 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_098, len = 716
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_116 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_116, len = 1365
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_136 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_136, len = 550
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_146 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_146, len = 998
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_155 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_155, len = 1150
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_168 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_168, len = 692
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_183 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_196 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_196, len = 1240
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_232 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_232, len = 1282
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_278 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_278, len = 852
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_283 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_283, len = 1451
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_299 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_299, len = 1280
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_312 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_312, len = 851
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_326 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_326, len = 990
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_359 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_359, len = 952
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_368 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_368, len = 480
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_379 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_379, len = 1236
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_397 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_397, len = 822
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_434 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_434, len = 1241
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_455 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_455, len = 1084
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_461 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_461, len = 574
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_472 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_472, len = 804
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_505 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_505, len = 1102
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_520 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_520, len = 736
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_526 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_526, len = 1153
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_541 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_541, len = 680
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_567 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_567, len = 1168
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_572 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_572, len = 1470
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_579 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_579, len = 1132
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_594 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_594, len = 2239
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_606 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_614 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_614, len = 960
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_631 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_631, len = 1372
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_638 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_638, len = 1191
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_644 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_644, len = 1211
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_662 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_662, len = 1118
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_669 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_669, len = 1116
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_001_700 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_001_700, len = 1703
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_015 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_015, len = 1017
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_026 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_026, len = 1460
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_043 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_043, len = 628
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_064 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_064, len = 614
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_091 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_091, len = 1409
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_125 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_125, len = 587
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_150 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_150, len = 721
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_159 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_159, len = 1248
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_165 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_178 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_185 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_185, len = 518
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_223 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_223, len = 638
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_231 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_231, len = 619
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_299 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_299, len = 832
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_312 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_318 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_318, len = 1198
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_363 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_363, len = 1653
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_400 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_400, len = 788
+LOG (apply-cmvn[5.1.38~1-3fec9]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 70 utterances, errors on 0
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_436 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_436, len = 771
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_447 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_454 with beam 40
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file ibm_002_454, len = 824
+WARNING (gmm-align-compiled[5.1.38~1-3fec9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance ibm_002_459 with beam 40
+LOG (gmm-align-compiled[5.1.38~1-3fec9]:main():gmm-align-compiled.cc:129) Overall log-likelihood per frame is -118.041 over 5624 frames.
+LOG (gmm-align-compiled[5.1.38~1-3fec9]:main():gmm-align-compiled.cc:131) Retried 67 out of 70 utterances.
+LOG (gmm-align-compiled[5.1.38~1-3fec9]:main():gmm-align-compiled.cc:133) Done 11, errors on 59
+# Accounting: time=36 threads=1
+# Ended (code 0) at Fri Apr  7 19:37:02 IST 2017, elapsed time 36 seconds

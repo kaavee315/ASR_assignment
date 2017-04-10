@@ -1,0 +1,15 @@
+# gmm-acc-stats-ali exp/tri1/9.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark,s,cs:gunzip -c exp/tri1/ali.4.gz|" exp/tri1/9.4.acc 
+# Started at Fri Apr  7 20:15:39 DST 2017
+#
+gmm-acc-stats-ali exp/tri1/9.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark,s,cs:gunzip -c exp/tri1/ali.4.gz|' exp/tri1/9.4.acc 
+apply-cmvn --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- 
+add-deltas ark:- ark:- 
+LOG (gmm-acc-stats-ali[5.1.38~1391-3fec9]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance ibm_004_303 avg. like is -104.717 over 865 frames.
+WARNING (gmm-acc-stats-ali[5.1.38~1391-3fec9]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance ibm_006_137
+LOG (gmm-acc-stats-ali[5.1.38~1391-3fec9]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance ibm_006_286 avg. like is -102.172 over 1105 frames.
+LOG (apply-cmvn[5.1.38~1391-3fec9]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 136 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.1.38~1391-3fec9]:main():gmm-acc-stats-ali.cc:112) Done 135 files, 1 with errors.
+LOG (gmm-acc-stats-ali[5.1.38~1391-3fec9]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -103.966 over 122883 frames.
+LOG (gmm-acc-stats-ali[5.1.38~1391-3fec9]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Apr  7 20:15:40 DST 2017, elapsed time 1 seconds
